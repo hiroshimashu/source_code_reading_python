@@ -64,7 +64,13 @@ class CategoryList extends Component {
     if(isCategory) {
       textInput =
         <TextInput
-         style={{height: 40, borderColor: 'gray', borderWidth: 1}}
+         style={{height: 40,
+                 width: 250,
+                 borderColor: 'gray',
+                 borderWidth: 1,
+                 position: "absolute",
+                 zIndex: 2
+               }}
          onChangeText={(text) => this.setState({text})}
          placeholder={this.state.text}
          backgroundColor = {"transparent"}
@@ -77,10 +83,10 @@ class CategoryList extends Component {
       colorParret = <ColorParret />
     }
     return (
-     <View>
-        {textInput}
-        {colorParret}
+     <View style = {{zIndex:1}}>
         <List　containerStyle = {{marginTop: 0}}>
+            {textInput}
+            {colorParret}
             {
               list.map((l, i) => (
                 <ListItem
