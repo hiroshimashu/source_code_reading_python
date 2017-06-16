@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, TextInput, Text } from "react-native";
+import { View, TextInput, Text, FlatList } from "react-native";
 import { List, ListItem, Icon, Card, Button } from "react-native-elements";
 import { EnterNewCategory } from "../actions";
 import { connect } from "react-redux";
@@ -174,25 +174,24 @@ class CategoryList extends Component {
     }
 
 
-
-
     return (
      <View style = {{zIndex:1}}>
-        <List　containerStyle = {{marginTop: 0}}>
+        <List　containerStyle = {{marginTop: 0,  backgroundColor:"white"}}>
             {textInput}
             {colorParret}
-            {
-              list.map((l, i) => (
-                <ListItem
-                  key={i}
-                  height = {60}
-                  hideChevron = {true}
-                />
-               ))
-             }
-
+            <FlatList
+              data = {this.props.category}
+              renderItem = {({ item }) => {
+               return (
+                 <ListItem
+                   title = {item.name}
+                   subtitle = {`${item.numTitle} title`}
+                   leftIcon = {{name: "folder", type: "material-community", color: item.color }}
+                 />
+               )
+             }}
+            />
         </List>
-
      </View>
     );
   }
