@@ -3,6 +3,7 @@ import { View, Animated, PanResponder } from "react-native";
 import { SearchBar, Button, Card} from "react-native-elements";
 import { Dimensions } from "react-native";
 import { NavigationActions } from "react-navigation";
+import { connect } from "react-redux";
 
 class GridView extends Component {
   render() {
@@ -23,10 +24,10 @@ class GridView extends Component {
           />
          <View style = {{flexDirection: "row"}}>
            <View style = {{flexDirection: "column", marginTop: 10}}>
-             <Button buttonStyle = {{height: 235,
+             {this.props.category.length === 0 &&
+               <Button buttonStyle = {{height: 235,
                                        width: 200,
-
-                                      }}
+                                     }}
                      icon = {{type: "material-community",
                              name:"plus",
                              size: 30
@@ -34,20 +35,41 @@ class GridView extends Component {
                      backgroundColor = {"#C0C0C0"}
                      containerViewStyle ={{marginBottom: 5}}
                      onPress = {this.props.onAdd}
-             />
+              />
+             }
+             {this.props.category[0] &&
+               <Button buttonStyle = {{height: 235,
+                                       width: 200,
+                                     }}
+                     title = {this.props.category[0].name}
+                     backgroundColor = {this.props.category[0].color}
+                     containerViewStyle ={{marginBottom: 5}}
+               />
+             }
+            {this.props.category.length < 2 &&
+               <Button buttonStyle = {{height: 115,
+                                         width: 200,
+
+                                        }}
+                       icon = {{type: "material-community",
+                               name:"plus",
+                               size: 30
+                               }}
+                       backgroundColor = {"#C0C0C0"}
+                       containerViewStyle ={{marginBottom: 5}}
+                       onPress = {this.props.onAdd}
+               />
+            }
+            {this.props.category[1] &&
              <Button buttonStyle = {{height: 115,
                                        width: 200,
 
                                       }}
-                     icon = {{type: "material-community",
-                             name:"plus",
-                             size: 30
-                             }}
-                     backgroundColor = {"#C0C0C0"}
-                     containerViewStyle ={{marginBottom: 5,
-
-                                         }}
+                     title = {this.props.category[1].name}
+                     backgroundColor = {this.props.category[1].color}
+                     containerViewStyle ={{marginBottom: 5,}}
              />
+            }
           </View>
           <View style = {{flexDirection: "column",
                              marginLeft: 0,
@@ -129,7 +151,11 @@ class GridView extends Component {
   }
 }
 
+const mapStateToProps = state => {
+  return {
+    category: state.newCategory
+  };
+}
 
 
-
-export default GridView;
+export default connect(mapStateToProps, null)(GridView);
