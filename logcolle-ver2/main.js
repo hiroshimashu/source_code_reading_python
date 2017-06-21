@@ -15,6 +15,7 @@ import DetailScreen from "./screens/DetailScreen";
 import WholeCategoryScreen from "./screens/WholeCategoryScreen";
 import AddLogScreen from "./screens/AddLogScreen";
 import CategoryScreen from "./screens/CategoryScreen";
+import WebViewScreen from "./screens/WebViewScreen";
 
 class App extends React.Component {
   render() {
@@ -25,7 +26,12 @@ class App extends React.Component {
          category:{screen: CategoryScreen}
        })
       },
-      addLog: { screen: AddLogScreen },
+      Log: {
+        screen: StackNavigator({
+         add:{ screen: AddLogScreen },
+         web:{ screen: WebViewScreen }
+        })
+      },
       Detail: { screen: DetailScreen }
     });
 

@@ -6,16 +6,14 @@ class WebSearch extends Component {
     const { width, height, scale } = Dimensions.get("window");
 
     return (
-    <View>
+    <View style = {{marginTop: 0, flex:1}}>
       <WebView
-        source={{uri: 'https://www.google.com'}}
+        source={{uri: 'https://www.google.co.jp/imghp?hl=ja'}}
         style={{
-                flex: 1,
+                flex:1,
                 width: width,
-                height: height
-              }}
-        javaScriptEnabled={true}
-        domStorageEnabled={true}
+                height: 200,
+               }}
         startInLoadingState={true}
         onError = {console.log("error has occured")}
         renderError = {console.log("renderError")}

@@ -12,9 +12,13 @@ class AddLogScreen extends Component {
       }
   }
 
+  onWeb = () => {
+    this.props.navigation.navigate("web")
+  }
+
   render() {
     return(
-      <AddLog />
+      <AddLog onWeb = { this.onWeb }/>
     );
   }
 }

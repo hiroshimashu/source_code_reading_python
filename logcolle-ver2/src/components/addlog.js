@@ -28,9 +28,6 @@ class AddLog extends Component {
 
     return (
       <View>
-        <View style = {viewStyle}>
-          <Text style = {textStyle}>{"ログ追加"}</Text>
-        </View>
         <Button  containerViewStyle = {{
                    marginLeft: 0,
                    marginRight: 0,
