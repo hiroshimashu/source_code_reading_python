@@ -16,9 +16,13 @@ class AddLogScreen extends Component {
     this.props.navigation.navigate("web")
   }
 
+  onCategoryDetail = () => { 
+    this.props.navigation.navigate("categorydetail")
+  }
+
   render() {
     return(
-      <AddLog onWeb = { this.onWeb }/>
+      <AddLog onWeb = { this.onWeb } onCategoryDetail = { this.onCategoryDetail } />
     );
   }
 }

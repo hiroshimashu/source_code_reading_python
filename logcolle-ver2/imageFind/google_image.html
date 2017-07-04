@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <div id="myContent">
+     <a href = "https://www.google.co.jp/imghp?hl=ja">
+       find image
+     </a>
+  </div>
+<script>
+  var pressTimer;
+  var content = document.querySelector(".rg_di rg_bx rg_el ivg-i");
+
+  content.addEventListener("touchend", function(){
+     clearTimeout(pressTimer);
+     return false;
+   })
+
+  content.addEventListener("touchstart",function(e){
+     pressTimer = window.setTimeout(function(){
+     console.log(content);
+     }, 500);
+     return false;
+    })
+</script>
+</body>

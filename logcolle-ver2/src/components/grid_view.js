@@ -44,6 +44,7 @@ class GridView extends Component {
                      title = {this.props.category[0].name}
                      backgroundColor = {this.props.category[0].color}
                      containerViewStyle ={{marginBottom: 5}}
+                     onPress = {this.props.onDetail}
                />
              }
             {this.props.category.length < 2 &&

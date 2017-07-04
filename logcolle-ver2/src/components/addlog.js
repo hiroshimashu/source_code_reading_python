@@ -17,7 +17,8 @@ class AddLog extends Component {
     this.state = { text: "タイトル",
                    date: new Date(),
                    content: "",
-                   isWebView: false
+                   isWebView: false, 
+                   confirm: false 
                  }
   }
 
@@ -80,10 +81,30 @@ class AddLog extends Component {
          backgroundColor = {"transparent"}
          clearTextOnForcus = {true}
        />
-       <Button
-         large
-         title = "確認"　
-       />
+        { !this.state.confirm && 
+             <Button
+               large
+               title = "確認"　
+               onPress = {() => {this.setState({confirm: true})}}
+             />
+        } 
+        { this.state.confirm && 
+            <View> 
+             <Button
+               large
+               title = "修正する"　
+               onPress = {() => {this.setState({confirm: false})}}
+             /> 
+             <Button 
+               large
+               title = "登録する"　
+               onPress = {() => {
+                this.setState({confirm: false})
+                this.props.onCategoryDetail()}
+               } 
+             /> 
+            </View> 
+        }  
       </View>
 
    )

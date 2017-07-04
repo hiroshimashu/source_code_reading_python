@@ -22,11 +22,15 @@ class HomeScreen extends Component {
     this.props.navigation.navigate("category")
   }
 
+  onDetail = () => { 
+    this.props.navigation.navigate("categorydetail");
+  } 
+
   render() {
     const { width, height, scale } = Dimensions.get("window");
 
     return (
-     <GridView onAdd = { this.onAdd } />
+     <GridView onAdd = { this.onAdd } onDetail = {this.onDetail}/>
     )
  }
 }
