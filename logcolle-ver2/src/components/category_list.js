@@ -185,6 +185,7 @@ class CategoryList extends Component {
                return (
                  <ListItem
                    title = {item.name}
+                   key = {item.name}
                    subtitle = {`${item.numTitle} title`}
                    leftIcon = {{name: "folder", type: "material-community", color: item.color }}
                  />

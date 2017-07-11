@@ -7,39 +7,15 @@ import { createStore } from "redux";
 import reducers from "./src/reducers";
 import { Provider } from "react-redux";
 import store from "./src/store";
-
 import { TabNavigator, StackNavigator } from "react-navigation";
-import WelcomeScreen from "./screens/WelcomeScreen";
-import HomeScreen from "./screens/HomeScreen";
-import DetailScreen from "./screens/DetailScreen";
-import WholeCategoryScreen from "./screens/WholeCategoryScreen";
-import AddLogScreen from "./screens/AddLogScreen";
-import CategoryScreen from "./screens/CategoryScreen";
-import WebViewScreen from "./screens/WebViewScreen";
-import CategoryDetailScreen from "./screens/CategoryDetailScreen"; 
+import TabBarNavigation from "./screens/TabBar/view/TabBarNavigation"; 
+
 
 class App extends React.Component {
   render() {
-    const MainNavigator = TabNavigator({
-      main: {
-       screen: StackNavigator({
-         home:{screen: HomeScreen},
-         category:{screen: CategoryScreen}, 
-         categorydetail: {screen: CategoryDetailScreen}
-       })
-      },
-      Log: {
-        screen: StackNavigator({
-         add:{ screen: AddLogScreen },
-         web:{ screen: WebViewScreen }
-        })
-      },
-      Detail: { screen: DetailScreen }
-    });
-
     return (
       <Provider store = {store}>
-        <MainNavigator />
+        <TabBarNavigation />
       </Provider>
     );
   }

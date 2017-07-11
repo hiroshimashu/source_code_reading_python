@@ -4,8 +4,11 @@ import { SearchBar, Button, Card} from "react-native-elements";
 import { Dimensions } from "react-native";
 import { NavigationActions } from "react-navigation";
 import { connect } from "react-redux";
+import { ViewDetail } from "../actions"; 
 
 class GridView extends Component {
+    
+  
   render() {
    return (
 
@@ -34,8 +37,8 @@ class GridView extends Component {
                              }}
                      backgroundColor = {"#C0C0C0"}
                      containerViewStyle ={{marginBottom: 5}}
-                     onPress = {this.props.onAdd}
-              />
+                     onPress = {() => {this.props.navigation.navigate("CategoryScreen")}} 
+              />  
              }
              {this.props.category[0] &&
                <Button buttonStyle = {{height: 235,
@@ -44,8 +47,12 @@ class GridView extends Component {
                      title = {this.props.category[0].name}
                      backgroundColor = {this.props.category[0].color}
                      containerViewStyle ={{marginBottom: 5}}
-                     onPress = {this.props.onDetail}
-               />
+                     onPress ={() => 　
+                        {　console.log("button1 is fired", this.props.navigation.state)
+                          this.props.navigation.navigate("CategoyrDetailScreen")
+                        }
+                     }   
+                />
              }
             {this.props.category.length < 2 &&
                <Button buttonStyle = {{height: 115,
@@ -58,7 +65,7 @@ class GridView extends Component {
                                }}
                        backgroundColor = {"#C0C0C0"}
                        containerViewStyle ={{marginBottom: 5}}
-                       onPress = {this.props.onAdd}
+                       onPress = {() => {this.props.navigation.navigate("CategoryScreen")}}
                />
             }
             {this.props.category[1] &&
@@ -68,7 +75,8 @@ class GridView extends Component {
                                       }}
                      title = {this.props.category[1].name}
                      backgroundColor = {this.props.category[1].color}
-                     containerViewStyle ={{marginBottom: 5,}}
+                     containerViewStyle ={{marginBottom: 5,}} 
+                     onPress = {() => {this.props.navigation.navigate("CategoyrDetailScreen")}}
              />
             }
           </View>
@@ -159,4 +167,4 @@ const mapStateToProps = state => {
 }
 
 
-export default connect(mapStateToProps, null)(GridView);
+export default connect(mapStateToProps, { ViewDetail })(GridView);

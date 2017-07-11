@@ -7,6 +7,8 @@ import { connect } from "react-redux";
 import DatePicker from 'react-native-datepicker'
 import CategoryModal from "./category_modal";
 import WebSearch from "./webView";
+import { NewLog } from "../actions"; 
+import { ViewDetail } from "../actions"; 
 
 
 
@@ -16,14 +18,33 @@ class AddLog extends Component {
     super(props);
     this.state = { text: "タイトル",
                    date: new Date(),
+                   category: "", 
                    content: "",
                    isWebView: false, 
                    confirm: false 
                  }
   }
 
-  render() {
+  componentWillUnMount() {
+    this.stateInitialize() 
+  }
 
+  handleCategory = (value) => { 
+    this.setState({category: value}); 
+  }
+
+  stateInitialize = () => { 
+    this.setState({text: "タイトル",
+                   date: new Date(),
+                   category: "", 
+                   content: "",
+                   isWebView: false, 
+                   confirm: false })
+  }
+
+  render() {
+    console.log(this.props.log); 
+    console.log(this.state.text);
     const { width, height, scale } = Dimensions.get("window");
     const { textStyle, viewStyle } = styles;
 
@@ -67,7 +88,7 @@ class AddLog extends Component {
               showIcon = {false}
               onDateChange={(date) => {this.setState({date: date})}}
         />
-        <CategoryModal category = {this.props.category}/>
+        <CategoryModal category = {this.props.category} onhandleCategory = {this.handleCategory} />
         <TextInput
          style={{height: 100,
                  width: 250,
@@ -99,9 +120,12 @@ class AddLog extends Component {
                large
                title = "登録する"　
                onPress = {() => {
-                this.setState({confirm: false})
-                this.props.onCategoryDetail()}
-               } 
+                this.props.NewLog(this.state.text, this.state.category, this.state.date, this.state.content); 
+                this.props.ViewDetail(this.state.category)
+                this.stateInitialize();
+                this.props.navigation.navigate("CategoryDetailScreen")
+                this.props.navigation.navigate("Home")
+               }} 
              /> 
             </View> 
         }  
@@ -131,8 +155,9 @@ const styles = {
 
 const mapStateToProps = state => {
   return {
-    category: state.newCategory
+    category: state.newCategory, 
+    log:state.newLog
   };
 }
 
-export default connect(mapStateToProps, null)(AddLog);
+export default connect(mapStateToProps, { NewLog, ViewDetail })(AddLog);

@@ -43,8 +43,10 @@ export default class CategoryModal extends Component {
           </Text>
           <Picker
                style = {{ marginTop:0}}
-               onValueChange={(itemValue, itemIndex) => this.setState({text:
-               itemValue})}
+               onValueChange={(itemValue, itemIndex) => { 
+                 this.setState({text: itemValue}); 
+                 this.props.onhandleCategory(itemValue); }
+               }
           >
             {this.props.category.map((l, i) => (
                 <Picker.Item label = {l.name} value = {l.name} />
