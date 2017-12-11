@@ -12,10 +12,16 @@
     "react-animations": "^1.0.0",
     "react-dom": "^16.0.0",
     "react-google-maps": "^9.2.1",
+    "react-p5-wrapper": "0.0.4",
     "react-particles": "0.0.3",
     "react-particles-js": "^2.1.0",
+    "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.14",
     "react-scroll-to-component": "^1.0.1",
+    "react-svg": "^2.2.3",
+    "react-swipe": "^5.1.0",
+    "react-transition-group": "^2.2.1",
+    "swipe-js-iso": "^2.0.4",
     "three": "^0.84.0"
   },
   "scripts": {

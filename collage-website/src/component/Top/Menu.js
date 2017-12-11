@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import IconButton from 'material-ui/IconButton';
-import DownArrow from 'material-ui/svg-icons/hardware/keyboard-arrow-down';
+import DownArrow from '../../static/DownArrow.svg';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 

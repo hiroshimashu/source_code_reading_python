@@ -7,7 +7,7 @@ import SellingPlanScreen from './component/Service/SellingPlan/SellingPlanScreen
 import LogColleScreen from './component/Service/Logcolle/LogcolleScreen';
 import LineStampScreen from './component/Service/LineStamp/LineStampScreen';
 import Access from './component/Access/Access';
-import Scene from './component/Top/TopScreen';
+import Scene from './component/Top/LargeScreen/TopScreen';
 import 'animate.css/animate.min.css';
 
 

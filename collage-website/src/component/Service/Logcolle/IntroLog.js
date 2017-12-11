@@ -1,6 +1,6 @@
 import React from 'react';
 import Play from '../../../static/player.svg';
-import GooglePlay from '../../../static/googlepay.png';
+import GooglePlay from '../../../static/googleplay.png';
 import AppStore from '../../../static/appstore.png';
 
 
