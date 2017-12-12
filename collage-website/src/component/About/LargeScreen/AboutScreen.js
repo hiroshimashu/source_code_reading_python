@@ -8,8 +8,12 @@ import CompanyProfileTitle from './CompanyProfileTitle';
 import CompanyProfile from './CompanyProfile';
 import ProfileDivider from './ProfileDivider';
 import GroupTitle from './GroupTitle';
-import GroupSubtitle from './GroupSubtitle';
+import GroupSubTitle from './GroupSubTitle';
 import GroupInformation from './GroupInformation';
+import group1 from '../../../static/group1.png';
+import group2 from '../../../static/group2.png';
+import detail1 from '../../../static/group1Detail.png';
+import detail2 from '../../../static/group2Detail.png';
 import Assemblage from '../../../static/ASSEMBLAGE_logo.png';
 import Zero from '../../../static/zero.png';
 import groupStyle from './groupStyle';
@@ -41,13 +45,15 @@ class AboutScreen extends Component {
                 </div>
                 <div className = 'groupWrapper' style = {styles.groupWrapper}>
                     <GroupTitle />
-                    <GroupSubtitle />
+                    <GroupSubTitle />
                     <GroupInformation
                         name = '株式会社アッサンブラージュ'
                         explanation = {
                             <div>主にテレビ番組の企画・制作を行う制作会社です。<br/>番組制作のノウハウにより、通常の広告制作の単価<br/>より、割安な単価での映像制作が可能となります。</div>
                         }
                         src = {Assemblage}
+                        src2 = {group1}
+                        src3 = {detail1}
                         cImage =  {groupStyle.cImage1}
                         nameStyle = {groupStyle.name1}
                         exStyle = {groupStyle.exStyle1}
@@ -59,6 +65,8 @@ class AboutScreen extends Component {
                             <div>広告×ITを標榜し、研究開発からサービス化までを目<br/>指す会社です。現在は人工知能を用いて広告動画を科<br/>学的に評価するプロジェクトに取り組んでいます。</div>
                         }
                         src = {Zero}
+                        src2 = {group2}
+                        src3 = {detail2}
                         cImage =  {groupStyle.cImage2}
                         nameStyle = {groupStyle.name2}
                         exStyle = {groupStyle.exStyle2}

@@ -35,6 +35,11 @@ class AnimationScene4 extends Component {
         setTimeout(() => {
             this.props.handleAnimation();
         }, 500);
+
+        setTimeout(() => {
+            this.props.handleThree();
+        }, 5000);
+
     }
 
     render() {

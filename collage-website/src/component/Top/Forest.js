@@ -25,7 +25,7 @@ const styles = {
         width:windowWidth,
         height: forestHeight,
         left: 0,
-        top: forestY
+        top: forestY,
     }
 };
 

@@ -33,7 +33,8 @@ const styleDiv = {
         color: '#b3b3b3',
         fontSize: '18px',
         textAlign: 'left',
-        lineHeight: '18px'
+        lineHeight: '18px',
+        zIndex: 3
     },
     div2: {
         position: 'absolute',
@@ -45,7 +46,8 @@ const styleDiv = {
         color: '#b3b3b3',
         fontSize: '18px',
         textAlign: 'left',
-        lineHeight: '18px'
+        lineHeight: '18px',
+        zIndex: 3
     },
     div3: {
         position: 'absolute',
@@ -57,7 +59,8 @@ const styleDiv = {
         color: '#b3b3b3',
         fontSize: '18px',
         textAlign: 'left',
-        lineHeight: '18px'
+        lineHeight: '18px',
+        zIndex: 3
     },
     div4: {
         position: 'absolute',
@@ -69,7 +72,8 @@ const styleDiv = {
         color: '#b3b3b3',
         fontSize: '18px',
         textAlign: 'left',
-        lineHeight: '18px'
+        lineHeight: '18px',
+        zIndex: 3
     }
 }
 

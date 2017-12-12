@@ -25,13 +25,10 @@ const worksStyle1 =  {
         height: titleHeight,
         top: titleY,
         left: titleX,
-        fontFamily: 'dnp-shuei-mgothic-std',
-        color: '#7e7e7e',
-        fontSize:  '26.55px',
-        lineHeight:  'px',
-        textAlign:  'left',
-        transform: 'scaleY(1.017)',
-        fontWeight: 600
+        ':hover': {
+            transform: 'scale(1.05)',
+        },
+
     }
 };
 

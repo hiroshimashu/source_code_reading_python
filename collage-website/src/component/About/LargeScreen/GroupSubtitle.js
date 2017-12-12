@@ -1,4 +1,6 @@
 import React from 'react';
+import sub from '../../../static/GROUPSUB.png';
+
 
 const windowWidth = window.innerWidth;
 const windowHeight = 2744 / 1200 * windowWidth;
@@ -13,11 +15,9 @@ const titleX = calculatePositionX()
 const titleY = 183 / 2744 * windowHeight;
 
 
-function GroupSubTitle() {
+function GroupSubTitle2() {
     return(
-        <div style = {styles.subtitle}>
-            GROUP
-        </div>
+        <img src = {sub} alt = 'sub' style = {styles.subtitle} />
     );
 }
 
@@ -25,17 +25,16 @@ const styles = {
     subtitle: {
         fontFamily: 'a-otf-gothic-bbb-pr6n',
         color: '#a2a2a2',
-        fontSize: '25px',
+        fontSize: '11px',
         textAlign: 'center',
         position: 'absolute',
         letterSpacing: '0.1em',
-        lineHeight: '41.316px',
         width: titleWidth,
         height: titleHeight,
         top: titleY,
-        left: titleX,
-        right: titleX
+        left: calculatePositionX(),
+        right: calculatePositionX()
     }
 };
 
-export default GroupSubTitle;
+export default GroupSubTitle2;

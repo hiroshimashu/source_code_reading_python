@@ -1,4 +1,5 @@
 import React from 'react';
+import group from '../../../static/COLLAGEGROUP.png';
 
 const windowWidth = window.innerWidth;
 const windowHeight = 2744 / 1200 * windowWidth;
@@ -12,11 +13,9 @@ function calculatePositionX() {
 const titleX = calculatePositionX()
 const titleY = 133 /2744 * windowHeight;
 
-function GroupTitle() {
+function GroupTitle2() {
     return(
-        <div className="groupTitle" style = {styles.group}>
-            COLLAGE
-        </div>
+        <img src = {group} className="groupTitle" alt = 'group' style = {styles.group} />
     );
 }
 
@@ -25,11 +24,10 @@ const styles = {
         color:  '#2d2d2d',
         fontFamily: 'a-otf-gothic-bbb-pr6n',
         fontWeight: 600,
-        fontSize: '40px',
+        fontSize: '20px',
         textAlign: 'center',
         letterSpacing: '0.1em',
         position: 'absolute',
-        lineHeight: '41.316px',
         width: titleWidth,
         height: titleHeight,
         top: titleY,
@@ -38,4 +36,4 @@ const styles = {
     }
 }
 
-export default GroupTitle;
+export default GroupTitle2;

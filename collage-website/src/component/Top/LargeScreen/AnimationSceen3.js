@@ -56,6 +56,7 @@ class AnimationScene3 extends Component {
         }, 500);
     }
 
+
     render() {
         return(
             <Fade in = { this.state.show } timeout = {2000}>

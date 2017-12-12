@@ -47,7 +47,10 @@ const worksStyle4 =  {
         textAlign:  'left',
         transform: 'scaleY(1.017)',
         fontWeight: 600,
-        zIndex:2
+        zIndex:2,
+        ':hover': {
+            transform: 'scale(1.05)',
+        },
 
     }
 };

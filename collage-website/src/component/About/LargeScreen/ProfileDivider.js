@@ -20,10 +20,7 @@ const styles = {
         height: dividerHeight,
         top: dividerY,
         left: dividerX,
-        borderWidth: '0.5px',
-        borderColor: '#9f9f9f',
-        borderStyle: 'solid',
-        backgroundColor: '#959595'
+        borderLeft: '1px solid #9f9f9f'
     }
 };
 

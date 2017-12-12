@@ -4,7 +4,8 @@ function WorksCard(props) {
     return(
         <div className="cardWrapper" style ={{position: 'absolute', width:'50%', height:'550px', left: `${props.left}`, top: `${props.top}`}}>
             <img src = {props.src} style={styles.img}/>
-            <div style={{ position:'absolute', top:'200px', width:'100%', height:'350px', backgroundColor:`${props.color}`}}>
+            <div style={{ position:'absolute', top:'200px', width:'100%', height:'350px', backgroundColor:`${props.color}`,
+            }}>
                 <div className='cardTitle' style ={styles.title}>{props.title}</div>
                 <div className="main" style={styles.main}>{(props.main).map((content) => {
                     return (<div key={content}>{content}</div>);
