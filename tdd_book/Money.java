@@ -1,4 +1,4 @@
-abstract class Money {
+class Money implements Expression {
     protected int amount;
     protected String currency;
     Money(int amount, String currency) {
@@ -8,6 +8,14 @@ abstract class Money {
 
     Money times(int multiplier) {
         return new Money(amount * multiplier, currency);
+    }
+
+    Expression plus(Money addend) {
+        return new Sum(this, addend);
+    }
+
+    public Money reduce(String to) {
+        return this;
     }
 
     String currency() {
@@ -20,11 +28,11 @@ abstract class Money {
     }
 
     static Money dollar(int amount) {
-        return new Dollar(amount, "USD");
+        return new Money(amount, "USD");
     }
 
     static Money franc(int amount) {
-        return new Franc(amount, "CHF");
+        return new Money(amount, "CHF");
     }
 
 
