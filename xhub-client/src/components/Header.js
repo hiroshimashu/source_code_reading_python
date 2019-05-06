@@ -26,7 +26,8 @@ class Header extends Component {
 }
 
 const styles = {
-   navWrapper: {
+	navWrapper: {
+	    position: "fixed",
         height: "60px"
     }
 }

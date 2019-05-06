@@ -1,5 +1,9 @@
 import React from 'react';
 
+// TODO
+// 文字のいろがうまく出ない問題を解決
+// 仮説: 背景のLinear gradientが影響を与えているのでは？
+
 const Vision = () => {
 	return (
 		<div className="vision-wrapper" style={styles.visionWrapper}>
@@ -58,3 +62,4 @@ const styles = {
 };
 
 export default Vision;
+
