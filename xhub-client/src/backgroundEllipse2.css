@@ -1,0 +1,13 @@
+.background-ellipse2-wrapper {
+    /* Ellipse */
+
+    position: absolute;
+    width: 941.62px;
+    height: 1119.53px;
+    top: 1012.96px;
+    left: calc(100% - 941.62px);
+}
+
+.background-ellipse2 {
+    width: 100%;
+}

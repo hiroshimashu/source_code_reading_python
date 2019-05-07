@@ -1,0 +1,136 @@
+.case-detail-wrapper {
+    width: 920px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 41px;
+}
+
+.case1-wrapper {
+    /* Rectangle 4 */
+    width: 445px;
+    height: 264px;
+    position: relative;
+    /* primary */
+    background: linear-gradient(90deg, #67CB99 1.64%, #7ACE68 100%);
+    /* shadow-base */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    overflow: hidden;
+
+}
+
+.case1-title {
+    /* 使い方1 初学者向けメンターサービス */
+    width: 234px;
+    height: 43px;
+    font-family: Noto Sans CJK JP;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+}
+
+.case1-main {
+    /* 困った時にオンラインで気軽に相談できる 現役AR/VRクリエイターの メンターを探すことが出来ます。 直接メンターに依頼できるため 価格はプログラミング教室の1/10以下で学習可能です。 */
+    width: 370px;
+    height: 101px;
+    font-family: Noto Sans CJK JP;
+    font-size: 14px;
+    line-height: 120%;
+    /* or 17px */
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 23px;
+}
+
+.case1-background1 {
+    position: absolute;
+    width: 519.12px;
+    height: 167px;
+}
+
+.case1-background-img1 {
+    position: absolute;
+    width: 100%;
+}
+
+.case1-background2 {
+    /* Ellipse 2.1 */
+
+    position: absolute;
+    width: 539.24px;
+    height: 184.73px;
+}
+
+.case1-background-img2 {
+    width: 100%;
+}
+
+
+.case2-wrapper {
+    /* Rectangle 4 */
+    position: relative;
+    width: 445px;
+    height: 264px;
+
+    /* primary */
+    background: linear-gradient(90deg, #67CB99 1.64%, #7ACE68 100%);
+    /* shadow-base */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+}
+
+.case2-title {
+    /* 使い方2 先端分野の生涯学習コミュニティ */
+    width: 280px;
+    height: 43px;
+    font-family: Noto Sans CJK JP;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+}
+
+.case2-main {
+    /* 業界最前線にいるXRスタートアップの CTOやR&Dの部門に所属するトップクリエイター方々と インタラクティブに技術探求するコミュニティを提供しています。 */
+    width: 430px;
+    height: 75px;
+    font-family: Noto Sans CJK JP;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 23px;
+}
+
+.case2-background1 {
+    /* Rectangle 5.1 */
+    position: absolute;
+    width: 202px;
+    height: 89px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.case2-background2 {
+    /* Rectangle 5.2 */
+    position: absolute;
+    width: 202px;
+    height: 89px;
+    left: 50%;
+    transform: translateX(-50%);
+}

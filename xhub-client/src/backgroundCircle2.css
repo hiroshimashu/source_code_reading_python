@@ -1,0 +1,8 @@
+.background-circle1-wrapper {
+
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: calc(100% - 60px);
+    top: 1492px;
+}

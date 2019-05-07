@@ -1,0 +1,154 @@
+/* a-1 */
+
+
+.top-wrapper {
+    position: relative;
+    width: 1440px;
+    height: 812px;
+    background: #FFFFFF;
+    overflow: hidden;
+}
+
+/* Ellipse */
+
+.ellipse {
+    /* Ellipse */
+    position: absolute;
+    width: 1537.08px;
+    height: 952.7px;
+    left: -148px;
+    top: -242px;
+}
+
+.background-img {
+    width: 100%;
+}
+
+.text-title {
+
+    position: absolute;
+    width: 500px;
+    height: 137px;
+    left: 165px;
+    top: 234px;
+
+    font-family: Noto Sans CJK JP;
+    font-size: 46px;
+    line-height: 68px;
+    letter-spacing: -0.04em;
+    font-weight: bold;
+    color: #3D4043;
+
+
+}
+
+.text-sub {
+    /* 好きなことで生きていくために。スキルは目的達成のための強力な手段。 困った時に相談できるメンターをつけて学習スピードを加速しませんか？ MENTAは個人が教えたり、教えてもらったりできるサービスです。 */
+
+    position: absolute;
+    width: 462px;
+    height: 75px;
+    left: 165px;
+    top: 387px;
+
+    font-family: Noto Sans CJK JP;
+    font-size: 14px;
+    line-height: 25px;
+
+    color: #3D4043;
+
+    /* body */
+
+}
+
+/* Rectnagles */
+.rectangle {
+    /* Rectangle */
+
+    position: absolute;
+    width: 709px;
+    height: 355px;
+    left: 734px;
+    top: 201.12px;
+
+    /* primary */
+    background: linear-gradient(90deg, #67CB99 1.64%, #7ACE68 100%);
+    box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.25);
+    border-radius: 88px;
+    transform: rotate(-10deg);
+
+}
+
+.rectangle1 {
+    /* Rectangle */
+
+    position: absolute;
+    width: 403.21px;
+    height: 201.89px;
+    left: 94px;
+    top: 584.02px;
+
+    /* primary */
+    background: linear-gradient(90deg, #67CB99 1.64%, #7ACE68 100%);
+    box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.25);
+    border-radius: 50.0458px;
+    transform: rotate(-10deg);
+
+}
+
+.rectangle2 {
+    /* Rectangle */
+
+    position: absolute;
+    width: 403.21px;
+    height: 201.89px;
+    left: 1139px;
+    top: 568.02px;
+
+    /* primary */
+    background: linear-gradient(90deg, #67CB99 1.64%, #7ACE68 100%);
+    box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.25);
+    border-radius: 50.0458px;
+    transform: rotate(-10deg);
+
+}
+
+
+
+/* Vectors*/
+
+.vector {
+    position: absolute;
+    width: 191px;
+    height: 198px;
+    left: 566px;
+    top: 614px;
+}
+
+.vector-img {
+    width: 100%;
+}
+
+.vector1 {
+    position: absolute;
+    width: 191px;
+    height: 198px;
+    left: 1245px;
+    top: 326px;
+}
+
+.vector1-img {
+    width: 100%;
+}
+
+.vector2 {
+    position: absolute;
+    width: 241px;
+    height: 196px;
+    left: 581px;
+    top: -32px;
+}
+
+.vector2-img {
+    width: 100%;
+}

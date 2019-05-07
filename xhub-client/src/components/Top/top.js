@@ -1,48 +1,47 @@
 import React from 'react'
-import topBackground from "../../static/top-background.png";
-import topBackground2 from "../../static/top-background2.svg";
-import topBackground3 from "../../static/top-background3.svg";
+import "../../experimental-style.css";
+import Background from "../../static/ellipse-background.svg";
+import Vector from "../../static/Vector.svg";
+import Vector1 from "../../static/Vector-1.svg";
+import Vector2 from "../../static/Vector-2.svg";
+
+// TODO
+  // Stylingの精緻化(Responsive対応)
 
 const Top = () => {
     return (
         <div className="top-wrapper">
-            <div className="img-wrapper" style = { styles.imgWrapper } style = { styles.topWrapper }>
-                <img src={topBackground} alt="top-background" style = { styles.background1 } />
-                <img src={topBackground2} alt="top-background2" style = { styles.background2 } />
-                <img src={topBackground3} alt="top-background3" style = { styles.background3 } />
+            <div className="ellipse">
+                <img 
+                    className = "background-img"
+                    src={Background}
+                    alt = "background"
+                />
+            </div>
+            <div className="rectangle"></div>
+            <div className="rectangle1"></div>
+            <div className="rectangle2"></div>
+            <div className = "text-title">
+                AR・VRを楽しく学ぶ<br/>
+                ものづくりコミュニティ
+            </div>
+            <div className = "text-sub">
+            好きなことで生きていくために。スキルは目的達成のための強力な手段。<br/>
+            困った時に相談できるメンターをつけて学習スピードを加速しませんか？<br />
+            MENTAは個人が教えたり、教えてもらったりできるサービスです。
+            </div>
+            <div className="vector">
+                <img className = "vector-img" src={Vector} alt = "vector" />
+            </div>
+            <div className="vector1">
+                <img className = "vector1-img" src={Vector1} alt = "vector1" />
+            </div>
+            <div className="vector2">
+                <img className = "vector2-img" src={Vector2} alt = "vector2" />
             </div>
         </div>
     )
 }
 
-const styles = {
-    topWrapper: {
-        width: "100%",
-        height: "1500px",
-    },
-    imgWrapper: {
-        position: "relative",
-        width: "100%",
-        height: "900px"
-    },
-    background1: { 
-        position: "absolute",
-        zIndex: 0,
-    },
-    background2: {
-        position: "absolute",
-        zIndex: 1,
-        opacity: 0.5
-    },
-    background3: {
-        position: "absolute",
-        zIndex: 2,
-        opacity: 0.5
-    }
-
-
-
-
-}
-
 export default Top;
+

@@ -1,0 +1,13 @@
+.background-circle1-wrapper {
+    /* Ellipse 2.1 */
+
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 85px;
+    top: 956px;
+}
+
+.background-circle1{
+    width: 100%;
+}

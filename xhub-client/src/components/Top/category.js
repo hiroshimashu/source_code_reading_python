@@ -22,6 +22,26 @@ const Category = () => {
                     }) }
                 </div>
             </div>
+            <div className="cat-main-wrapper" style = { styles.categoryMainWrapper }>
+                <div className="category-1-wrapper" style={styles.categoryMain}>
+                    {allImage.map(cat => {
+                        return <CategoryDetail 
+                            img={cat.img}
+                            title = {cat.title}
+                        />
+                    }) }
+                </div>
+            </div>
+            <div className="cat-main-wrapper" style = { styles.categoryMainWrapper }>
+                <div className="category-1-wrapper" style={styles.categoryMain}>
+                    {allImage.map(cat => {
+                        return <CategoryDetail 
+                            img={cat.img}
+                            title = {cat.title}
+                        />
+                    }) }
+                </div>
+            </div>
         </div>
     )
 }

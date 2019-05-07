@@ -40,9 +40,9 @@ const styles = {
 	visionWrapper: {
 		/* Rectangle */
 		width: '100%',
-		height: '719px',
-		background: 'linear-gradient(90deg, #67CB99 1.64%, #7ACE68 100%)',
-        opacity: 0.2,
+        height: '719px',
+        marginTop: '83px',
+        background: 'linear-gradient(90deg, rgba(103,203,153,0.2) 1.64%, rgba(122,206,104,0.2) 100%)',
         zIndex: 1
 	},
 	textWrapper: {

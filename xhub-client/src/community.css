@@ -1,0 +1,97 @@
+.community-wrapper {
+    margin-top: 64px;
+    width: 1142px;
+    height: 1359px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.community-title {
+    /* COMMUNITY */
+    width: 220px;
+    height: 54px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-family: Noto Sans CJK JP;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    color: #3D4043;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.community-genre {
+    display: flex;
+    width: 1110px;
+    height: 57px;
+
+}
+
+.genre1 {
+    /* Rectangle 4 */
+    width: 555px;
+    height: 57px;
+    /* primary */
+    background: linear-gradient(90deg, #67CB99 1.64%, #7ACE68 100%);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.genre1-main {
+    /* 初学者向け -1on1メンターを探す- */
+    width: 121px;
+    height: 41px;
+
+    font-family: Noto Sans CJK JP;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.genre1-sub {
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: center;
+}
+
+.genre2 {
+    /* Rectangle 4 */
+    width: 555px;
+    height: 57px;
+    /* primary */
+
+    /* dark */
+    border: 1px solid #BEBEBF;
+    box-sizing: border-box;
+
+
+}
+
+.genre2-main {
+    /* 現役クリエイター向け -専門コミュニティを探す- */
+    width: 160px;
+    height: 41px;
+
+    font-family: Noto Sans CJK JP;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #BEBEBF;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.genre2-sub {
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: center;
+}
